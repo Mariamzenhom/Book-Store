@@ -1,11 +1,7 @@
 import React from 'react';
 import './App.css';
-import BookDetails from './BookDetails';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function HomePage() {
-  function App() 
-{
+function App() {
   return (
     <div className="App">
       <header className="sticky top-0 z-50 w-full bg-white">
@@ -301,18 +297,5 @@ function HomePage() {
       </footer>
     </div>
   );
- }
 }
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/book/:id" element={<BookDetails />} />
-      </Routes>
-    </Router>
-  );
-}
-
 export default App;
